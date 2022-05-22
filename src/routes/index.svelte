@@ -38,6 +38,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 <h1>You can never break the chain</h1>
 <input bind:value={producerQID} /><button on:click={getChain}>the chain</button>
 
+<!-- Nice pattern https://svelte.dev/repl/5c95e18702764aefa71ff2b4616a6c6e?version=3.20.1 -->
 {#await response}
 	waiting
 	{typeof response}
